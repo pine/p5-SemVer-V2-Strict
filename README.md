@@ -1,21 +1,75 @@
+[![Build Status](https://travis-ci.org/pine613/p5-Semver-V2-Strict.svg?branch=master)](https://travis-ci.org/pine613/p5-Semver-V2-Strict) [![Coverage Status](http://codecov.io/github/pine613/p5-Semver-V2-Strict/coverage.svg?branch=master)](https://codecov.io/github/pine613/p5-Semver-V2-Strict?branch=master)
 # NAME
 
-Semver::V2::Strict - It's new $module
+Semver::V2::Strict - Semantic version v2.0 object for Perl
 
 # SYNOPSIS
 
     use Semver::V2::Strict;
 
+    my $v1 = Semver::V2::Strict->new('1.0.2');
+    my $v2 = Semver::V2::Strict->new('2.0.0-alpha.10');
+
+    if ($v1 < $v2) {
+        print "$v1 < $v2\n"; # => '1.0.2 < 2.0.0-alpha.10'
+    }
+
 # DESCRIPTION
 
-Semver::V2::Strict is ...
+This module subclasses version to create semantic versions, as defined by the [Semantic Versioning 2.0.0](http://semver.org/spec/v2.0.0.html) Specification.
+
+# METHODS
+
+## CLASS METHODS
+
+### `new()`
+Create new empty `Semver::V2::Strict` instance.
+`Semver::V2::Strict->new()` equals `Semver::V2::Strict->new('0.0.0')`.
+
+### `new($version_string)`
+Create new `Semver::V2::Strict` instance from a version string.
+`Semver::V2::Strict->new('1.0.0')` equals `Semver::V2::Strict->new(1, 0, 0)`.
+
+### `new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)`
+Create new `Semver::V2::Strict` instance from version numbers.
+`Semver::V2::Strict->new('1.0.0-alpha+100')` equals `Semver::V2::Strict->new(1, 0, 0, 'alpha', '100')`.
+
+## METHODS
+
+### `<=>`
+Compare two `Semver::V2::Strict` instances.
+
+### `""`
+Convert a `Semver::V2::Strict` instance to string.
+
+# SEE ALSO
+
+- [SemVer](https://metacpan.org/pod/SemVer)
+- [version](https://metacpan.org/pod/version)
 
 # LICENSE
 
-Copyright (C) Pine Mizune.
+The MIT License (MIT)
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+Copyright (c) 2015 Pine Mizune
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 # AUTHOR
 

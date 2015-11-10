@@ -1,4 +1,4 @@
 name = "Semver-V2-Strict"
-# badges = ["travis"]
+badges = ["travis", "codecov"]
 module_maker="ModuleBuildTiny"
 

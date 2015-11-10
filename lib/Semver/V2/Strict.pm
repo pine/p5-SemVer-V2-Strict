@@ -114,22 +114,80 @@ __END__
 
 =head1 NAME
 
-Semver::V2::Strict - It's new $module
+Semver::V2::Strict - Semantic version v2.0 object for Perl
 
 =head1 SYNOPSIS
 
     use Semver::V2::Strict;
 
+    my $v1 = Semver::V2::Strict->new('1.0.2');
+    my $v2 = Semver::V2::Strict->new('2.0.0-alpha.10');
+
+    if ($v1 < $v2) {
+        print "$v1 < $v2\n"; # => '1.0.2 < 2.0.0-alpha.10'
+    }
+
 =head1 DESCRIPTION
 
-Semver::V2::Strict is ...
+This module subclasses version to create semantic versions, as defined by the L<Semantic Versioning 2.0.0|http://semver.org/spec/v2.0.0.html> Specification.
+
+=head1 METHODS
+
+=head2 CLASS METHODS
+
+=head3 C<new()>
+Create new empty C<Semver::V2::Strict> instance.
+C<Semver::V2::Strict-E<gt>new()> equals C<Semver::V2::Strict-E<gt>new('0.0.0')>.
+
+=head3 C<new($version_string)>
+Create new C<Semver::V2::Strict> instance from a version string.
+C<Semver::V2::Strict-E<gt>new('1.0.0')> equals C<Semver::V2::Strict-E<gt>new(1, 0, 0)>.
+
+=head3 C<new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)>
+Create new C<Semver::V2::Strict> instance from version numbers.
+C<Semver::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<Semver::V2::Strict-E<gt>new(1, 0, 0, 'alpha', '100')>.
+
+=head2 METHODS
+
+=head3 C<E<lt>=E<gt>>
+Compare two C<Semver::V2::Strict> instances.
+
+=head3 C<"">
+Convert a C<Semver::V2::Strict> instance to string.
+
+=head1 SEE ALSO
+
+=over
+
+=item * L<SemVer>
+
+=item * L<version>
+
+=back
 
 =head1 LICENSE
 
-Copyright (C) Pine Mizune.
+The MIT License (MIT)
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+Copyright (c) 2015 Pine Mizune
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 =head1 AUTHOR
 

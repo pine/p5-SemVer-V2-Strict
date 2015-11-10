@@ -1,12 +1,12 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Semantic version v2.0 object for Perl",
    "author" : [
-      "Pine Mizune <pinemz@gmail.com>"
+      "Pine Mizune"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.0, CPAN::Meta::Converter version 2.150005",
    "license" : [
-      "perl_5"
+      "unknown"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -42,16 +42,39 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008001"
+            "perl" : "5.010000"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.98"
+            "Devel::Cover" : "1.20",
+            "Devel::Cover::Report::Codecov" : "0",
+            "Perl::Critic" : "1.125",
+            "Test::Deep" : "0.117",
+            "Test::Deep::Matcher" : "0.01",
+            "Test::Exception" : "0.40",
+            "Test::Mock::Guard" : "0.10",
+            "Test::MockObject" : "1.20150527",
+            "Test::More" : "1.001014",
+            "Test::Perl::Critic" : "1.03"
          }
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/pine613/p5-Semver-V2-Strict/issues"
+      },
+      "homepage" : "https://github.com/pine613/p5-Semver-V2-Strict",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/pine613/p5-Semver-V2-Strict.git",
+         "web" : "https://github.com/pine613/p5-Semver-V2-Strict"
+      }
+   },
    "version" : "0.01",
+   "x_contributors" : [
+      "Pine Mizune <pinemz@gmail.com>"
+   ],
    "x_serialization_backend" : "JSON::PP version 2.27203"
 }
