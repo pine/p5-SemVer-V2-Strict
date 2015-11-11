@@ -189,6 +189,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+=head1 ACKNOWLEDGEMENT
+
+C<SemVer::V2::Strict> is based from rosylilly's L<semver|https://github.com/rosylilly/semver>.
+Thank you.
+
 =head1 AUTHOR
 
 Pine Mizune E<lt>pinemz@gmail.comE<gt>

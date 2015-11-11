@@ -71,6 +71,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+# ACKNOWLEDGEMENT
+
+`SemVer::V2::Strict` is based from rosylilly's [semver](https://github.com/rosylilly/semver).
+Thank you.
+
 # AUTHOR
 
 Pine Mizune &lt;pinemz@gmail.com>
