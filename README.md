@@ -1,14 +1,14 @@
-[![Build Status](https://travis-ci.org/pine613/p5-Semver-V2-Strict.svg?branch=master)](https://travis-ci.org/pine613/p5-Semver-V2-Strict) [![Coverage Status](http://codecov.io/github/pine613/p5-Semver-V2-Strict/coverage.svg?branch=master)](https://codecov.io/github/pine613/p5-Semver-V2-Strict?branch=master)
+[![Build Status](https://travis-ci.org/pine613/p5-SemVer-V2-Strict.svg?branch=master)](https://travis-ci.org/pine613/p5-SemVer-V2-Strict) [![Coverage Status](http://codecov.io/github/pine613/p5-SemVer-V2-Strict/coverage.svg?branch=master)](https://codecov.io/github/pine613/p5-SemVer-V2-Strict?branch=master)
 # NAME
 
-Semver::V2::Strict - Semantic version v2.0 object for Perl
+SemVer::V2::Strict - Semantic version v2.0 object for Perl
 
 # SYNOPSIS
 
-    use Semver::V2::Strict;
+    use SemVer::V2::Strict;
 
-    my $v1 = Semver::V2::Strict->new('1.0.2');
-    my $v2 = Semver::V2::Strict->new('2.0.0-alpha.10');
+    my $v1 = SemVer::V2::Strict->new('1.0.2');
+    my $v2 = SemVer::V2::Strict->new('2.0.0-alpha.10');
 
     if ($v1 < $v2) {
         print "$v1 < $v2\n"; # => '1.0.2 < 2.0.0-alpha.10'
@@ -23,24 +23,24 @@ This module subclasses version to create semantic versions, as defined by the [S
 ## CLASS METHODS
 
 ### `new()`
-Create new empty `Semver::V2::Strict` instance.
-`Semver::V2::Strict->new()` equals `Semver::V2::Strict->new('0.0.0')`.
+Create new empty `SemVer::V2::Strict` instance.
+`SemVer::V2::Strict->new()` equals `SemVer::V2::Strict->new('0.0.0')`.
 
 ### `new($version_string)`
-Create new `Semver::V2::Strict` instance from a version string.
-`Semver::V2::Strict->new('1.0.0')` equals `Semver::V2::Strict->new(1, 0, 0)`.
+Create new `SemVer::V2::Strict` instance from a version string.
+`SemVer::V2::Strict->new('1.0.0')` equals `SemVer::V2::Strict->new(1, 0, 0)`.
 
 ### `new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)`
-Create new `Semver::V2::Strict` instance from version numbers.
-`Semver::V2::Strict->new('1.0.0-alpha+100')` equals `Semver::V2::Strict->new(1, 0, 0, 'alpha', '100')`.
+Create new `SemVer::V2::Strict` instance from version numbers.
+`SemVer::V2::Strict->new('1.0.0-alpha+100')` equals `SemVer::V2::Strict->new(1, 0, 0, 'alpha', '100')`.
 
 ## METHODS
 
 ### `<=>`
-Compare two `Semver::V2::Strict` instances.
+Compare two `SemVer::V2::Strict` instances.
 
 ### `""`
-Convert a `Semver::V2::Strict` instance to string.
+Convert a `SemVer::V2::Strict` instance to string.
 
 # SEE ALSO
 

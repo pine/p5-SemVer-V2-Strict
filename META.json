@@ -63,13 +63,13 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/pine613/p5-Semver-V2-Strict/issues"
+         "web" : "https://github.com/pine613/p5-SemVer-V2-Strict/issues"
       },
-      "homepage" : "https://github.com/pine613/p5-Semver-V2-Strict",
+      "homepage" : "https://github.com/pine613/p5-SemVer-V2-Strict",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/pine613/p5-Semver-V2-Strict.git",
-         "web" : "https://github.com/pine613/p5-Semver-V2-Strict"
+         "url" : "git://github.com/pine613/p5-SemVer-V2-Strict.git",
+         "web" : "https://github.com/pine613/p5-SemVer-V2-Strict"
       }
    },
    "version" : "0.01",
