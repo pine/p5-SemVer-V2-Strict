@@ -12,10 +12,26 @@ sub create_instance { SemVer::V2::Strict->new(@_) }
 
 subtest basic => sub {
     subtest '# ==' => sub {
-        my $a = create_instance('1.0.0-rc2');
-        my $b = create_instance('1.0.0-rc2');
+        subtest '# undef' => sub {
+            my $a = create_instance('1.0.0');
+            my $b = create_instance('1.0.0');
 
-        is $a, $b;
+            is $a, $b;
+        };
+
+        subtest '# number' => sub {
+            my $a = create_instance('1.0.0-1');
+            my $b = create_instance('1.0.0-1');
+
+            is $a, $b;
+        };
+
+        subtest '# string' => sub {
+            my $a = create_instance('1.0.0-rc2');
+            my $b = create_instance('1.0.0-rc2');
+
+            is $a, $b;
+        };
     };
 
     subtest '# <=' => sub {
