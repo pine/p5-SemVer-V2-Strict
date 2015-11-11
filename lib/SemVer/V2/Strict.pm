@@ -1,4 +1,4 @@
-package Semver::V2::Strict;
+package SemVer::V2::Strict;
 use strict;
 use warnings;
 use utf8;
@@ -114,14 +114,14 @@ __END__
 
 =head1 NAME
 
-Semver::V2::Strict - Semantic version v2.0 object for Perl
+SemVer::V2::Strict - Semantic version v2.0 object for Perl
 
 =head1 SYNOPSIS
 
-    use Semver::V2::Strict;
+    use SemVer::V2::Strict;
 
-    my $v1 = Semver::V2::Strict->new('1.0.2');
-    my $v2 = Semver::V2::Strict->new('2.0.0-alpha.10');
+    my $v1 = SemVer::V2::Strict->new('1.0.2');
+    my $v2 = SemVer::V2::Strict->new('2.0.0-alpha.10');
 
     if ($v1 < $v2) {
         print "$v1 < $v2\n"; # => '1.0.2 < 2.0.0-alpha.10'
@@ -136,24 +136,24 @@ This module subclasses version to create semantic versions, as defined by the L<
 =head2 CLASS METHODS
 
 =head3 C<new()>
-Create new empty C<Semver::V2::Strict> instance.
-C<Semver::V2::Strict-E<gt>new()> equals C<Semver::V2::Strict-E<gt>new('0.0.0')>.
+Create new empty C<SemVer::V2::Strict> instance.
+C<SemVer::V2::Strict-E<gt>new()> equals C<SemVer::V2::Strict-E<gt>new('0.0.0')>.
 
 =head3 C<new($version_string)>
-Create new C<Semver::V2::Strict> instance from a version string.
-C<Semver::V2::Strict-E<gt>new('1.0.0')> equals C<Semver::V2::Strict-E<gt>new(1, 0, 0)>.
+Create new C<SemVer::V2::Strict> instance from a version string.
+C<SemVer::V2::Strict-E<gt>new('1.0.0')> equals C<SemVer::V2::Strict-E<gt>new(1, 0, 0)>.
 
 =head3 C<new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)>
-Create new C<Semver::V2::Strict> instance from version numbers.
-C<Semver::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<Semver::V2::Strict-E<gt>new(1, 0, 0, 'alpha', '100')>.
+Create new C<SemVer::V2::Strict> instance from version numbers.
+C<SemVer::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<SemVer::V2::Strict-E<gt>new(1, 0, 0, 'alpha', '100')>.
 
 =head2 METHODS
 
 =head3 C<E<lt>=E<gt>>
-Compare two C<Semver::V2::Strict> instances.
+Compare two C<SemVer::V2::Strict> instances.
 
 =head3 C<"">
-Convert a C<Semver::V2::Strict> instance to string.
+Convert a C<SemVer::V2::Strict> instance to string.
 
 =head1 SEE ALSO
 

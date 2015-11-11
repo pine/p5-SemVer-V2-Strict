@@ -6,9 +6,9 @@ use Scalar::Util qw/refaddr/;
 use Test::Mock::Guard qw/mock_guard/;
 
 use t::Util;
-use Semver::V2::Strict;
+use SemVer::V2::Strict;
 
-sub create_instance { Semver::V2::Strict->new(@_) }
+sub create_instance { SemVer::V2::Strict->new(@_) }
 
 subtest basic => sub {
     subtest '# ==' => sub {

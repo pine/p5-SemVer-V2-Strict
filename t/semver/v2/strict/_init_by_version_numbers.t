@@ -3,9 +3,9 @@ use warnings;
 use utf8;
 
 use t::Util;
-use Semver::V2::Strict;
+use SemVer::V2::Strict;
 
-sub create_instance { bless {} => 'Semver::V2::Strict' }
+sub create_instance { bless {} => 'SemVer::V2::Strict' }
 
 subtest basic => sub {
     my $version = create_instance;
