@@ -8,3 +8,14 @@ perl:
   - "5.18"
   - "5.20"
 
+before_install:
+  - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
+  - cpanm --quiet --notest --skip-satisfied --installdeps --with-recommend .
+
+script:
+  - perl Build.PL
+  - ./Build build
+  - cover -test
+
+after_success:
+  - cover -report codecov
