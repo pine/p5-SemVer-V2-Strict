@@ -23,23 +23,28 @@ This module subclasses version to create semantic versions, as defined by the [S
 ## CLASS METHODS
 
 ### `new()`
+
 Create new empty `SemVer::V2::Strict` instance.
 `SemVer::V2::Strict->new()` equals `SemVer::V2::Strict->new('0.0.0')`.
 
 ### `new($version_string)`
+
 Create new `SemVer::V2::Strict` instance from a version string.
 `SemVer::V2::Strict->new('1.0.0')` equals `SemVer::V2::Strict->new(1, 0, 0)`.
 
 ### `new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)`
+
 Create new `SemVer::V2::Strict` instance from version numbers.
 `SemVer::V2::Strict->new('1.0.0-alpha+100')` equals `SemVer::V2::Strict->new(1, 0, 0, 'alpha', '100')`.
 
 ## METHODS
 
 ### `<=>`
+
 Compare two `SemVer::V2::Strict` instances.
 
 ### `""`
+
 Convert a `SemVer::V2::Strict` instance to string.
 
 # SEE ALSO

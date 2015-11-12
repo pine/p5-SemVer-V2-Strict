@@ -136,23 +136,28 @@ This module subclasses version to create semantic versions, as defined by the L<
 =head2 CLASS METHODS
 
 =head3 C<new()>
+
 Create new empty C<SemVer::V2::Strict> instance.
 C<SemVer::V2::Strict-E<gt>new()> equals C<SemVer::V2::Strict-E<gt>new('0.0.0')>.
 
 =head3 C<new($version_string)>
+
 Create new C<SemVer::V2::Strict> instance from a version string.
 C<SemVer::V2::Strict-E<gt>new('1.0.0')> equals C<SemVer::V2::Strict-E<gt>new(1, 0, 0)>.
 
 =head3 C<new($major, $minor = 0, $patch = 0, $pre_release = undef, $build_metadata = undef)>
+
 Create new C<SemVer::V2::Strict> instance from version numbers.
 C<SemVer::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<SemVer::V2::Strict-E<gt>new(1, 0, 0, 'alpha', '100')>.
 
 =head2 METHODS
 
 =head3 C<E<lt>=E<gt>>
+
 Compare two C<SemVer::V2::Strict> instances.
 
 =head3 C<"">
+
 Convert a C<SemVer::V2::Strict> instance to string.
 
 =head1 SEE ALSO
