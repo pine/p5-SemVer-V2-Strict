@@ -16,21 +16,21 @@ subtest basic => sub {
             my $a = create_instance('1.0.0');
             my $b = create_instance('1.0.0');
 
-            is $a, $b;
+            cmp_ok $a, '==', $b;
         };
 
         subtest '# number' => sub {
             my $a = create_instance('1.0.0-1');
             my $b = create_instance('1.0.0-1');
 
-            is $a, $b;
+            cmp_ok $a, '==', $b;
         };
 
         subtest '# string' => sub {
             my $a = create_instance('1.0.0-rc2');
             my $b = create_instance('1.0.0-rc2');
 
-            is $a, $b;
+            cmp_ok $a, '==', $b;
         };
     };
 

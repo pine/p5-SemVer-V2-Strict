@@ -74,7 +74,7 @@ sub _cmp {
     return $self->major <=> $other->major if $self->major != $other->major;
     return $self->minor <=> $other->minor if $self->minor != $other->minor;
     return $self->patch <=> $other->patch if $self->patch != $other->patch;
-    return $self->_compare_pre_release($self->pre_release, $other->pre_release);
+    return _compare_pre_release($self->pre_release, $other->pre_release);
 }
 
 sub _compare_pre_release {
