@@ -1,4 +1,4 @@
-name = "Semver-V2-Strict"
+name = "SemVer-V2-Strict"
 badges = ["travis", "codecov"]
 module_maker="ModuleBuildTiny"
 license = "mit"
