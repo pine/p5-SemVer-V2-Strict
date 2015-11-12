@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Semver-V2-Strict",
+   "name" : "SemVer-V2-Strict",
    "no_index" : {
       "directory" : [
          "t",
@@ -72,7 +72,7 @@
          "web" : "https://github.com/pine613/p5-SemVer-V2-Strict"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:PINE",
    "x_contributors" : [
       "Pine Mizune <pinemz@gmail.com>"

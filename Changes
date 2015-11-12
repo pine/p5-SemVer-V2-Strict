@@ -2,6 +2,10 @@ Revision history for Perl extension Semver-V2-Strict
 
 {{$NEXT}}
 
+0.03 2015-11-12T11:53:42Z
+
+    - fix module name
+
 0.02 2015-11-12T11:49:22Z
 
     - fix compare bugs
