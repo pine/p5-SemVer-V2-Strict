@@ -152,6 +152,26 @@ C<SemVer::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<SemVer::V2::Strict-E<
 
 =head2 METHODS
 
+=head3 C<major>
+
+Get the major version number.
+
+=head3 C<minor>
+
+Return the minor version number.
+
+=head3 C<patch>
+
+Return the patch version number.
+
+=head3 C<pre_release>
+
+Return the pre_release string.
+
+=head3 C<build_metadata>
+
+Return the build_metadata string.
+
 =head3 C<E<lt>=E<gt>>
 
 Compare two C<SemVer::V2::Strict> instances.

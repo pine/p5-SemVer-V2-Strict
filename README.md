@@ -39,6 +39,26 @@ Create new `SemVer::V2::Strict` instance from version numbers.
 
 ## METHODS
 
+### `major`
+
+Get the major version number.
+
+### `minor`
+
+Return the minor version number.
+
+### `patch`
+
+Return the patch version number.
+
+### `pre_release`
+
+Return the pre\_release string.
+
+### `build_metadata`
+
+Return the build\_metadata string.
+
 ### `<=>`
 
 Compare two `SemVer::V2::Strict` instances.
@@ -83,4 +103,4 @@ Thank you.
 
 # AUTHOR
 
-Pine Mizune &lt;pinemz@gmail.com>
+Pine Mizune <pinemz@gmail.com>
