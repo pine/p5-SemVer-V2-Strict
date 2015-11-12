@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = "0.01";
+our $VERSION = '0.02';
 
 use constant PRE_RELEASE_FORMAT    => qr/(?:-(?<pre_release>[a-zA-Z0-9.\-]+))?/;
 use constant BUILD_METADATA_FORMAT => qr/(?:\+(?<build_metadata>[a-zA-Z0-9.\-]+))?/;
