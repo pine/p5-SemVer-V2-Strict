@@ -13,6 +13,6 @@ test_script:
   - carton exec prove --norc --rc=.proverc -r t xt
 
 cache:
-	- local
+  - local
 
 shallow_clone: true
