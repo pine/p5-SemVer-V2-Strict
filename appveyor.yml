@@ -4,10 +4,15 @@ init:
 install:
   - choco install strawberryperl -version 5.20.1.1
   - SET PATH=C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin;%PATH%
+  - cpanm --notest --quiet Carton
+  - carton install
 
 build: off
 
 test_script:
-  - prove --norc --rc=.proverc -r t xt
+  - carton exec prove --norc --rc=.proverc -r t xt
+
+cache:
+	- local
 
 shallow_clone: true
