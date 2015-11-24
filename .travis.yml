@@ -11,11 +11,9 @@ perl:
 
 before_install:
   - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
-  - cpanm --quiet --notest --skip-satisfied --installdeps --with-recommend .
 
 script:
-  - perl Build.PL
-  - ./Build build
+  - perl Build.PL && ./Build build
   - prove -r xt
   - cover -test
 
