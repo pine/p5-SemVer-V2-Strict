@@ -2,6 +2,9 @@ Revision history for Perl extension Semver-V2-Strict
 
 {{$NEXT}}
 
+0.10 2015-12-05T22:29:02Z
+    - add clean class method
+
 0.05 2015-11-13T15:24:18Z
 
     - fix license file
