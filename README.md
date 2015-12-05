@@ -37,6 +37,10 @@ Create new `SemVer::V2::Strict` instance from a version string.
 Create new `SemVer::V2::Strict` instance from version numbers.
 `SemVer::V2::Strict->new('1.0.0-alpha+100')` equals `SemVer::V2::Strict->new(1, 0, 0, 'alpha', '100')`.
 
+### `clean($version_string)`
+
+Clean version string. Trim spaces and `'v'` prefix.
+
 ## METHODS
 
 ### `major`
@@ -103,4 +107,4 @@ Thank you.
 
 # AUTHOR
 
-Pine Mizune <pinemz@gmail.com>
+Pine Mizune &lt;pinemz@gmail.com>
