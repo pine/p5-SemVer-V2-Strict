@@ -2,7 +2,6 @@ package SemVer::V2::Strict;
 use strict;
 use warnings;
 use utf8;
-
 our $VERSION = '0.10';
 
 use constant PRE_RELEASE_FORMAT    => qr/(?:-(?<pre_release>[a-zA-Z0-9.\-]+))?/;

@@ -1,5 +1,5 @@
 name = "SemVer-V2-Strict"
-badges = ["travis", "codecov"]
+badges = ["travis", "appveyor", "codecov"]
 module_maker="ModuleBuildTiny"
 license = "mit"
 authority = "cpan:PINE"
