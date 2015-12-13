@@ -107,4 +107,4 @@ Thank you.
 
 # AUTHOR
 
-Pine Mizune <pinemz@gmail.com>
+Pine Mizune &lt;pinemz@gmail.com>
