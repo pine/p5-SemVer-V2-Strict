@@ -73,7 +73,7 @@
          "web" : "https://github.com/pine613/p5-SemVer-V2-Strict"
       }
    },
-   "version" : "0.11",
+   "version" : "0.12",
    "x_authority" : "cpan:PINE",
    "x_contributors" : [
       "Pine Mizune <pinemz@gmail.com>"

@@ -71,6 +71,10 @@ Compare two `SemVer::V2::Strict` instances.
 
 Convert a `SemVer::V2::Strict` instance to string.
 
+### `as_string()`
+
+Convert a `SemVer::V2::Strict` instance to string.
+
 # SEE ALSO
 
 - [SemVer](https://metacpan.org/pod/SemVer)
