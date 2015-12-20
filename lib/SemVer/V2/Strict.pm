@@ -193,6 +193,10 @@ Compare two C<SemVer::V2::Strict> instances.
 
 Convert a C<SemVer::V2::Strict> instance to string.
 
+=head3 C<as_string()>
+
+Convert a C<SemVer::V2::Strict> instance to string.
+
 =head1 SEE ALSO
 
 =over
