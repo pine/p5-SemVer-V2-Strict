@@ -1,7 +1,7 @@
 {
    "abstract" : "Semantic version v2.0 object for Perl",
    "author" : [
-      "Pine Mizune"
+      "-2016 Pine Mizune"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150005",
