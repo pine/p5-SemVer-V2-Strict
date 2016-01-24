@@ -66,6 +66,10 @@ sub clean {
     return eval { $class->new($version)->as_string };
 }
 
+sub sort {
+    my ($class, @versions) = @_;
+    return sort { $class->new($a) <=> $class->new($b) } @versions;
+}
 
 sub as_string {
     my $self = shift;
@@ -163,6 +167,10 @@ C<SemVer::V2::Strict-E<gt>new('1.0.0-alpha+100')> equals C<SemVer::V2::Strict-E<
 
 Clean version string. Trim spaces and C<'v'> prefix.
 
+=head3 C<sort(... $version_string)>
+
+Sort version strings.
+
 =head2 METHODS
 
 =head3 C<major>
@@ -211,7 +219,7 @@ Convert a C<SemVer::V2::Strict> instance to string.
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Pine Mizune
+Copyright (c) 2015-2016 Pine Mizune
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
