@@ -35,15 +35,16 @@ subtest basic => sub {
     };
 
     subtest '# <=' => sub {
-        my $v1 = create_instance('1.0.0-alpha');
-        my $v2 = create_instance('1.0.0-alpha.1');
-        my $v3 = create_instance('1.0.0-alpha.beta');
-        my $v4 = create_instance('1.0.0-beta');
-        my $v5 = create_instance('1.0.0-beta.2');
-        my $v6 = create_instance('1.0.0-beta.11');
-        my $v7 = create_instance('1.0.0-rc.1');
-        my $v8 = create_instance('1.0.0');
-        my $v9 = create_instance('2.0.0');
+        my $v1  = create_instance('1.0.0-alpha');
+        my $v2  = create_instance('1.0.0-alpha.1');
+        my $v3  = create_instance('1.0.0-alpha.beta');
+        my $v4  = create_instance('1.0.0-beta');
+        my $v5  = create_instance('1.0.0-beta.2');
+        my $v6  = create_instance('1.0.0-beta.11');
+        my $v7  = create_instance('1.0.0-rc.1');
+        my $v8  = create_instance('1.0.0');
+        my $v9  = create_instance('2.0.0');
+        my $v10 = create_instance('2.1.0');
 
         cmp_ok $v1, '<', $v2;
         cmp_ok $v2, '<', $v3;
@@ -53,6 +54,7 @@ subtest basic => sub {
         cmp_ok $v6, '<', $v7;
         cmp_ok $v7, '<', $v8;
         cmp_ok $v8, '<', $v9;
+        cmp_ok $v9, '<', $v10;
     };
 };
 
