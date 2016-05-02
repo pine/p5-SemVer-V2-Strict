@@ -1,7 +1,7 @@
 {
    "abstract" : "Semantic version v2.0 object for Perl",
    "author" : [
-      "-2016 Pine Mizune"
+      "Pine Mizune <pinemz@gmail.com>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150005",
@@ -75,8 +75,5 @@
    },
    "version" : "0.13",
    "x_authority" : "cpan:PINE",
-   "x_contributors" : [
-      "Pine Mizune <pinemz@gmail.com>"
-   ],
    "x_serialization_backend" : "JSON::PP version 2.27203"
 }
