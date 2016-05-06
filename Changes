@@ -3,18 +3,22 @@ Revision history for Perl extension Semver-V2-Strict
 {{$NEXT}}
 
 0.14 2016-05-02T23:47:48Z
+
     - fix project urls and author urls
 
 0.13 2016-01-24T23:10:45Z
+
     - add sort class method
 
 0.12 2015-12-20T13:03:27Z
+
     - update documents
 
 0.11 2015-12-13T10:55:01Z
     - update documents
 
 0.10 2015-12-05T22:29:02Z
+
     - add clean class method
 
 0.05 2015-11-13T15:24:18Z
