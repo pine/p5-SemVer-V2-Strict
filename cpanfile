@@ -21,4 +21,7 @@ on 'develop' => sub {
     requires 'Test::MinimumVersion::Fast', '0.04';
     requires 'Test::PAUSE::Permissions', '0.05';
     requires 'Test::Spellunker', '0.4.0';
+    requires 'Software::License::MIT', '0.103012';
+    requires 'Version::Next';
+    requires 'CPAN::Uploader';
 };
