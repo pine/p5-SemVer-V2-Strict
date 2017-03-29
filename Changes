@@ -2,6 +2,9 @@ Revision history for Perl extension Semver-V2-Strict
 
 {{$NEXT}}
 
+0.15 2017-03-29T11:08:27Z
+    - enable static install
+
 0.14 2016-05-02T23:47:48Z
 
     - fix project urls and author urls

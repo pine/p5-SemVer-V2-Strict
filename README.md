@@ -115,4 +115,4 @@ Thank you.
 
 # AUTHOR
 
-Pine Mizune &lt;pinemz@gmail.com>
+Pine Mizune <pinemz@gmail.com>
