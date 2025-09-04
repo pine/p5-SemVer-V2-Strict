@@ -2,7 +2,7 @@ requires 'perl', '5.010000';
 
 on 'test' => sub {
     requires 'Test::More', '1.001014';
-    requires 'Test::Deep', '>= 1.120, < 1.200';
+    requires 'Test::Deep', '>= 0.117, < 1.200';
     requires 'Test::Deep::Matcher', '0.01';
     requires 'Test::Exception', '0.40';
     requires 'Test::Mock::Guard', '0.10';
