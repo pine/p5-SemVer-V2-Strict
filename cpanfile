@@ -8,10 +8,6 @@ on 'test' => sub {
     requires 'Test::Mock::Guard', '0.10';
     requires 'Test::MockObject', '1.20150527';
     requires 'Data::OptList', '< 0.114';
-
-    requires 'Devel::Cover', '>= 1.20, < 1.34';
-    requires 'Devel::Cover::Report::Codecov';
-
     requires 'Perl::Critic', '1.125';
     requires 'Test::Perl::Critic', '1.03';
 };
