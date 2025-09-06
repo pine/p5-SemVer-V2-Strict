@@ -88,7 +88,7 @@ Convert a `SemVer::V2::Strict` instance to string.
 
 The MIT License (MIT)
 
-Copyright (c) 2015-2019 Pine Mizune
+Copyright (c) 2015-2019, 2025 Pine Mizune
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
