@@ -1,0 +1,55 @@
+name: test
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 9 1 * *'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+        perl-version:
+          - "5.10"
+          - "5.12"
+          - "5.14"
+          - "5.16"
+          - "5.18"
+          - "5.20"
+          - "5.22"
+          - "5.24"
+          - "5.26"
+          - "5.28"
+          - "5.30"
+          - "5.32"
+          - "5.34"
+          - "5.36"
+          - "5.38"
+          - "5.40"
+          - "5.42"
+        distribution:
+          - default
+        include:
+          - os: windows-latest
+            perl-version: "5.40"
+            distribution: strawberry
+    runs-on: ${{ matrix.os }}
+    name: Perl ${{ matrix.perl-version }} (${{ matrix.os }})
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup perl
+        uses: shogo82148/actions-setup-perl@5796a908661aa68fc0a5b8f55c6791af2376d72e # v1.35.0
+        with:
+          perl-version: ${{ matrix.perl-version }}
+          distribution: ${{ matrix.distribution }}
+      - name: Install dependencies
+        run: cpanm -nq --installdeps .
+      - name: Run test
+        run: prove -lvr t
