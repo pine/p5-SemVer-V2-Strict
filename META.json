@@ -75,7 +75,7 @@
          "web" : "https://github.com/pine/p5-SemVer-V2-Strict"
       }
    },
-   "version" : "0.17",
+   "version" : "0.18",
    "x_authority" : "cpan:PINE",
    "x_serialization_backend" : "JSON::PP version 4.02",
    "x_static_install" : 1
