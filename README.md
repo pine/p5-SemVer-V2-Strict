@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pine/p5-SemVer-V2-Strict.svg?branch=master)](https://travis-ci.org/pine/p5-SemVer-V2-Strict) [![Build Status](https://img.shields.io/appveyor/ci/pine/p5-SemVer-V2-Strict/master.svg?logo=appveyor)](https://ci.appveyor.com/project/pine/p5-SemVer-V2-Strict/branch/master) [![Coverage Status](http://codecov.io/github/pine/p5-SemVer-V2-Strict/coverage.svg?branch=master)](https://codecov.io/github/pine/p5-SemVer-V2-Strict?branch=master)
+[![Actions Status](https://github.com/pine/p5-SemVer-V2-Strict/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/pine/p5-SemVer-V2-Strict/actions?workflow=test) [![MetaCPAN Release](https://badge.fury.io/pl/SemVer-V2-Strict.svg)](https://metacpan.org/release/SemVer-V2-Strict)
 # NAME
 
 SemVer::V2::Strict - Semantic version v2.0 object for Perl
